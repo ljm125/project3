@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>배터리와 알람 기능이 있는 디지털 시계</title>
+        <link rel ="stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div id="clock">00:00:00</div>
+        <div id="battery">Battery: 100%</div>
+        <br>
+        <form id="alarmForm">
+            <input type="number" min="0" max="23" id="hour" placeholder="Hour">
+            <input type="number" min="0" max="59" id="minute" placeholder="Minute">
+            <input type="number" min="0" max="59" id="second" placeholder="Second">
+            <button type="button" id="addAlarm">Add Alarm</button>
+        </form>
+        <br>
+        <div id="alarmlist">Alarms: </div>
+        <script src="script.js"></script>
+    </body>
+</html>
